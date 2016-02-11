@@ -12,3 +12,5 @@ example:
 For this one, you will need to install psutil first
 example:
 --services tomcat,java,/opt/jedox/ps/tomcat/bin/bootstrap.jar:/opt/jedox/ps/tomcat/bin/tomcat-juli.jar --services SupervisionServ,SupervisionServ --services palo,palo --services core,core.bin
+
+[LeanBI](http://leanbi.ch/big-data/)
