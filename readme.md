@@ -1,4 +1,4 @@
-#Check script for monitoring jedox with nagios
+#Check scripts for monitoring jedox with nagios
 
 ##check_jedox_backup
 example:
