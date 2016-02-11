@@ -29,7 +29,7 @@ class checker:
             file_date=backup_time.strftime(date_format)
         else :
             #need to take the backup_time from yeasterday
-            file_date=backup_time - timedelta(days=-1)
+            file_date=backup_time - timedelta(days=1)
             file_date=file_date.strftime(date_format)
 
         return (file_template % file_date)
