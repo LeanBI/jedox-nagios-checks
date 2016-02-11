@@ -46,7 +46,7 @@ class checker():
 
 if __name__=="__main__" :
     parser = argparse.ArgumentParser(description='check if jedox services are running')
-    parser.add_argument('--services', action="append", help="indicate which service to check example : java,/my.jar odr myprog")
+    parser.add_argument('--services', action="append", help="indicate which service to check example : java,/my.jar odr myprog",required=True)
     args=vars(parser.parse_args())
 
     services=[]

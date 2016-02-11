@@ -42,7 +42,7 @@ class checker:
 
 if __name__=="__main__" :
     parser = argparse.ArgumentParser(description='check if jedox ports are open')
-    parser.add_argument('--ports', action="append", help="indicate which port to monitor : 7777,olap")
+    parser.add_argument('--ports', action="append", help="indicate which port to monitor : 7777,olap",required=True)
     args=vars(parser.parse_args())
 
     ports=[]
