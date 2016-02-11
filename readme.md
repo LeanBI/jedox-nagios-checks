@@ -2,7 +2,7 @@
 
 ##check_jedox_backup
 example:
---file-template backup-jedox_leanbi_ch-%s_*.tgz --date-format %Y-%m-%d --backup-time 04:15 --backup-dir /opt/jedox_backup --backup-file-size 30
+--file-template backup-jedox_leanbi_ch-%s_*.tgz --date-format %Y-%m-%d --backup-time 04:15 --backup-dir /opt/jedox/backup --backup-file-size 30
 
 ##check_jedox_ports
 example:
