@@ -21,7 +21,7 @@ class checker():
             for tc in services: #loop over services to check
                 if process_name in tc["prog"]: #process is in list
                     if "cmdline" in tc:
-                        if tc["cmdline"]==process_cmdline:
+                        if tc["cmdline"] in process_cmdline:
                             tc["check"]=True
                     else : #no cmdline, prog is enough
                         tc["check"]=True
@@ -56,7 +56,7 @@ if __name__=="__main__" :
         if len(sp)==2 :#there is no ':' so only program name
             services.append({"name":sp[0], "prog":sp[1]})
         else :
-            services.append({"name":sp[0],"prog":sp[1], "cmdline":"sp[2]"})
+            services.append({"name":sp[0],"prog":sp[1], "cmdline":sp[2]})
 
     checker(services)
 
